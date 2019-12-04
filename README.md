@@ -9,6 +9,9 @@ Jupytext is installed so that text files (`.py`, `.md`, etc) can be executed as 
 
 Code execution is disabled by default in the `nbsphinx` configuration file (`conf.py`).
 
+The `.circleci/config.yml` requires a personal Github token so that the site files can be pushed to the `gh-pages` branch of the repo.
+
+The Github personal token can be obtained from `https://github.com/settings/tokens/new`, for example with the `public_repo` permission checked, and needs to be set as a `GITHUB_PERSONAL_TOKEN` environment variable associated with the appropriate CircleCI project (eg set from `http://circleci.com/gh/GITUB_USER/GITHUB_PROJECT/edit#env-vars`).
 
 ## Example README
 A reimagining of the OpenLearn Unit [XXX](https://www.open.edu/openlearn).
